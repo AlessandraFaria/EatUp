@@ -1,1 +1,6 @@
-# EatUp
+->iniciar o slideShow
+->Botar pra baixo a barra de navegação
+->Integração dos dados
+->page de infos
+->criar manifesto
+->criar service worker
