@@ -2,70 +2,53 @@
 <html>
    <head>
       <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width">
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="manifest" href="/manifest.webmanifest" />
+      <link rel="icon" type="image/png" href="/img/add.png" />
       <title>repl.it</title>
       <link href="style.css" rel="stylesheet" type="text/css" />
-      <script src="./script.js"></script>
+      <script src="script.js"></script>
    </head>
    <header class="headerBar dark"></header>
    <body>
-      <div class="slideshow-container">
-         <!-- Full-width slides/quotes -->
-         <div class="mySlides">
-            <q>PIZZA</q>
-         </div>
-         <div class="mySlides">
-            <q>SUSHI</q>
-         </div>
-         <div class="mySlides">
-            <q>SOBREMESA.</q>
-         </div>
-         <!-- Next/prev buttons -->
-         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-         <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      </div>
-      <!-- Dots/bullets/indicators -->
-      <div class="dot-container">
-         <span class="dot" onclick="currentSlide(1)"></span>
-         <span class="dot" onclick="currentSlide(2)"></span>
-         <span class="dot" onclick="currentSlide(3)"></span>
-      </div>
-      <div class="timeline">
-         <div class="container left">
-            <div class="content">
-               <h2>Açai Sorvetaça</h2>
-               <p>Lorem ipsum..</p>
+      <nav>
+         <ul>
+            <li>
+               <a href="avaliacoes.html">Avaliações</a>
+            </li>
+            <li>
+               <a href="./Forms/index.html">Adicionar</a>
+            </li>
+            <li>
+               <a href="#">Sobre</a>
+            </li>
+         </ul>
+      </nav>
+      <div class="container">
+         <div class="row">
+            <div class="col-md-4">
+               <div class="card card-1">
+                  <h3>Avaliação1</h3>
+                  <p>A curated set of   ES5/ES6/TypeScript wrappers for plugins to easily add any native functionality to your Ionic apps.</p>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="card card-1">
+                  <h3>Avaliação 2</h3>
+                  <p>Tabs, buttons, inputs, lists, cards, and more! A comprehensive library
+                     of mobile UI components, ready to go.
+                  </p>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="card card-1">
+                  <h3>Avaliação 3</h3>
+                  <p>Learn how to easily customize and modify your app’s design to fit your
+                     brand across all mobile platform styles.
+                  </p>
+               </div>
             </div>
          </div>
-         <div class="container right">
-            <div class="content">
-               <h2>Pizza Betos</h2>
-               <p>Lorem ipsum..</p>
-            </div>
-         </div>
-      </div>
-      <div class="container left">
-         <div class="content">
-            <h2>Pizza Betos</h2>
-            <p>Lorem ipsum..</p>
-         </div>
-      </div>
-      </div>
-      <div class="chat-popup" id="myForm">
-         <form action="/action_page.php" class="form-container">
-            <h1>Adicinar Avaliação</h1>
-            <label for="msg"><b>Nome do prato a ser avaliado</b></label>
-            <textarea placeholder="..." name="msg" required></textarea>
-            <label for="avaliacao"><b>Avaliação</b></label>
-            <textarea placeholder="..." name="msg" required></textarea>
-            <button type="submit" class="btn">Send</button>
-            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-         </form>
-      </div>
-      <div id="navbar">
-         <a href="#info">Informações</a>
-         <a class="active" onclick="openForm()" href="#add">+</a>
-         <a href="restaurantes.html">Restaurantes</a>
       </div>
    </body>
 </html>
