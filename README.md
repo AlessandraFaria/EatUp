@@ -14,7 +14,7 @@ Na tela 'Adcionar' é possível cadastrar uma nova avaliação
 
 <p align="center">
   <a href="#">
-    <img align="center" src="imagens/pwa.png" />
+    <img align="center" src="img/pwa.png" />
   </a>
 </p>
 
