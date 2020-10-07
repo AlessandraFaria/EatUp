@@ -5,10 +5,19 @@
 Neste aplicativo é possivel cadastrar e visualizar avaliações de experiências gastronômicas.
 
 ## Descrição de cada página
-https://repl.it/@AlessandraFaria/EatUp#imagens/pwa.png
+
 Na tela 'home' é possivel ver as 3 ultimas avaliações;
+
 Na tela 'Avaliações' é possivel ver todas as avaliações lançadas
+
 Na tela 'Adcionar' é possível cadastrar uma nova avaliação
+
+<p align="center">
+  <a href="#">
+    <img align="center" src="imagens/pwa.png" />
+  </a>
+</p>
+
 
 ## Armazenamento de dados
 É utilizado o recurso 'cache' para capturar e armazenar o os dados inputados na tela 'Adcionar' no navegador
