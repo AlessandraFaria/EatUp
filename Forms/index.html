@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width">
   <link rel="manifest" href="/manifest.webmanifest" />
   <link rel="icon" type="image/png" href="/img/add.png" />
+   <script src="script.js"></script>
   <title>repl.it</title>
   <link rel="stylesheet" href="./style.css">
 
@@ -43,15 +44,28 @@
       
         </div>
               <form class="form">
-          <input type="text" class="name entry " placeholder="Nome do prato"/>
+          <input type="text" class="name entry " id ="prato" placeholder="Nome do prato"/>
           
-          <input type="text" class="email entry" placeholder="Nome do restaurante"/>
+          <input type="text" class="email entry" id="restaurante" placeholder="Nome do restaurante"/>
           
-          <textarea class="message entry" placeholder="Comentário"></textarea> 
+          <textarea class="message entry" id= "comentario" placeholder="Comentário"></textarea> 
           
-          <button class="submit entry" onclick="thanks()">Enviar</button>
+          <button class="submit entry" id="btnInc">Enviar</button>
         </form>  
-        
+        <script>
+           document.querySelector('#btnInc').onclick = () => {  
+    adicionaTarefa();
+  };
+
+  const adicionaTarefa = () => {
+  let prato = document.querySelector('#prato').value;
+  let restaurante = document.querySelector('#restaurante').value;
+  let comentario = document.querySelector('#comentario').value;
+   alert(prato +"-"+ restaurante+"-"+ comentario)
+
+  }
+  
+        </script>
         <div class="shadow"></div>
       </div>
       
